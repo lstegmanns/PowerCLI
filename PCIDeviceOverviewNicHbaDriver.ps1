@@ -7,11 +7,6 @@ Created by Lucas Stegmanns lstegmanns@vmware.com , use at own risk.
 
 
 #>
-
-
-
-
-
 ##clear variables
 $hosts = $null
 $esxcli = $null
@@ -24,14 +19,8 @@ $viServer = vc1.vmlab.com
 #creates empty arry for csv export
 $list=@()
 
-
-
 Connect-VIServer -Server $viServer
 $hosts = Get-VMHost
-
-
-
-
 
 foreach( $hosti in $hosts){
     $hosti.Name
