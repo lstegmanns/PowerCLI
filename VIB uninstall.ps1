@@ -2,7 +2,7 @@
 Created by Lucas Stegmanns lstegmanns@vmware.com , use at own risk.
 
 
-01.07.2021: Manually installs a VIB on all Hosts where the VIB file is located under $vibLocation
+01.07.2021: Manually uninstalls a VIB on all Hosts where the VIB name is $vibName
 
 
 #>
@@ -23,7 +23,7 @@ $hosts = Get-VMHost
 #$hosts = Get-Cluster -Name $clusterName |Get-VMHost
 
 
-##Create esxcli command and trigger VIB install
+##Create esxcli command and trigger VIB uninstall
  foreach ($hosti in $hosts){
     $hosti.Name
     $esxcli = Get-EsxCLI -VMHost $hosti -V2
