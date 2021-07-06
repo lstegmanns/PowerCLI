@@ -14,7 +14,7 @@ $args1 = $null
 $hosti = $null
 $clusterName = "Cluster1"
 $viServer = "vc1.vmlab.com"
-$vibLocation = '/var/core/LSISASMegaRAIDcontrollerconfigurationutility_7709_1211093.VIB'
+$vibLocation = '/var/core/FTS_LSISASMegaRAIDcontrollerconfigurationutility_7709_1211093.VIB'
 
 
 ##conect to vCenter and Get the Host list
