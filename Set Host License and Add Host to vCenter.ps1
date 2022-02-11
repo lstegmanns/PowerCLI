@@ -35,7 +35,7 @@ foreach($hosti in $hosts){
         }
 
 ## Connect to vCenter, choose location, add hosts to vCenter, discconect again.
-Connect-VIServer -Server $vcServer -user $vcUser -Password "VMware1!"
+Connect-VIServer -Server $vcServer -user $vcUser -Password $vcPassword
 
 
 foreach ($hosti in $hosts){
